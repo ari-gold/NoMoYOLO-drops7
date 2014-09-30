@@ -1,12 +1,11 @@
-; Packaging information for Hot Sauce
+; Packaging information for Nomoyolo-drops7
 name = pantheon
-distribution_name = "pantheon"
+distribution_name = "NoMoYOLO-drops7"
 description = "Stop Cowboy Coding"
 version = "7.x-1.x"
 core = "7.x"
 exclusive = 1
 
-base[] = panopoly
 
 files[] = pantheon.install
 files[] = pantheon.profile
@@ -27,6 +26,7 @@ dependencies[] = list
 dependencies[] = number
 dependencies[] = options
 dependencies[] = path
+dependencies[] = rdf
 dependencies[] = taxonomy
 dependencies[] = search
 dependencies[] = shortcut
@@ -36,11 +36,16 @@ dependencies[] = file
 dependencies[] = dblog
 dependencies[] = update
 
+; Required - Pantheon
+dependencies[] = pantheon_api
+
 ; Recommended - CFM
 dependencies[] = features
 dependencies[] = xautoload
 dependencies[] = configuration
+dependencies[] = configuration_ui
 dependencies[] = strongarm
+dependencies[] = diff
 
 ; Recommended - Admin & UI
 dependencies[] = admin_menu
