@@ -1,33 +1,59 @@
-; $Id$
-name = Pantheon
-description = Install with pre-configured integration for the Pantheon Platform
-version = VERSION
-core = 7.x
-dependencies[] = block
+; Packaging information for Hot Sauce
+name = pantheon
+distribution_name = "pantheon"
+description = "Stop Cowboy Coding"
+version = "7.x-1.x"
+core = "7.x"
+exclusive = 1
+
+base[] = panopoly
+
+files[] = pantheon.install
+files[] = pantheon.profile
+
+; ------------
+; Dependencies
+; ------------
+
+; Drupal Core
 dependencies[] = color
 dependencies[] = comment
 dependencies[] = contextual
 dependencies[] = dashboard
 dependencies[] = help
+dependencies[] = menu
 dependencies[] = image
 dependencies[] = list
-dependencies[] = menu
 dependencies[] = number
 dependencies[] = options
 dependencies[] = path
 dependencies[] = taxonomy
-dependencies[] = dblog
 dependencies[] = search
 dependencies[] = shortcut
-dependencies[] = toolbar
-dependencies[] = overlay
+dependencies[] = field
 dependencies[] = field_ui
 dependencies[] = file
-dependencies[] = rdf
+dependencies[] = dblog
+dependencies[] = update
 
-;dependencies[] = apachesolr
-;dependencies[] = apachesolr_search
-dependencies[] = pantheon_api
-dependencies[] = pantheon_login
-;dependencies[] = pantheon_apachesolr
-files[] = pantheon.profile
+; Recommended - CFM
+dependencies[] = features
+dependencies[] = xautoload
+dependencies[] = configuration
+dependencies[] = strongarm
+
+; Recommended - Admin & UI
+dependencies[] = admin_menu
+dependencies[] = admin_menu_toolbar
+dependencies[] = breakpoints
+dependencies[] = backports
+dependencies[] = simplified_menu_admin
+dependencies[] = save_draft
+dependencies[] = module_filter
+dependencies[] = date_popup_authored
+dependencies[] = views_ui
+
+; Recommended - Other
+dependencies[] = devel
+dependencies[] = admin_devel
+dependencies[] = uuid
