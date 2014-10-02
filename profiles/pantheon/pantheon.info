@@ -57,6 +57,7 @@ dependencies[] = save_draft
 dependencies[] = module_filter
 dependencies[] = date_popup_authored
 dependencies[] = views_ui
+dependencies[] = environment_indicator
 
 ; Recommended - Other
 dependencies[] = devel
