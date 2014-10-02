@@ -58,6 +58,13 @@ dependencies[] = module_filter
 dependencies[] = date_popup_authored
 dependencies[] = views_ui
 dependencies[] = environment_indicator
+dependencies[] = entityreference
+dependencies[] = pathauto
+dependencies[] = subpathauto
+dependencies[] = ctools
+dependencies[] = views
+dependencies[] = admin_views
+dependencies[] = views_bulk_operations
 
 ; Recommended - Other
 dependencies[] = devel
