@@ -61,6 +61,7 @@ dependencies[] = environment_indicator
 dependencies[] = entityreference
 dependencies[] = pathauto
 dependencies[] = subpathauto
+dependencies[] = token
 dependencies[] = ctools
 dependencies[] = views
 dependencies[] = admin_views
